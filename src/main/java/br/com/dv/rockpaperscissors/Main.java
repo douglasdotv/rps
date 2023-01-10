@@ -57,6 +57,7 @@ public class Main {
 
             if (Objects.equals(userInput, "!exit")) {
                 System.out.print("Bye!");
+                scanner.close();
                 break;
             }
 
