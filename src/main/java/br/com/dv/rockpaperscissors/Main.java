@@ -28,6 +28,8 @@ public class Main {
                 String[] lineWords = line.split("\\s+");
                 players.put(lineWords[0], Integer.parseInt(lineWords[1]));
             }
+            reader.close();
+            inputStream.close();
         } catch (IOException e) {
             System.out.println("An error occurred while reading the file: " + e.getMessage());
         }
