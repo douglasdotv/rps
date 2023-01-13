@@ -96,12 +96,11 @@ public class GameManager {
     }
 
     public void run() {
-        GameManager gameManager = new GameManager();
-        gameManager.askPlayerName();
-        gameManager.establishPlayerRating();
-        gameManager.askMoves();
-        gameManager.printAmazingMessage();
-        gameManager.playGame();
+        askPlayerName();
+        establishPlayerRating();
+        askMoves();
+        printAmazingMessage();
+        playGame();
     }
 
 }
