@@ -38,7 +38,7 @@ public class GameManager {
         if (chosenMoves.isEmpty()) {
             moves = List.of("rock", "scissors", "paper");
         } else {
-            moves = Arrays.stream(chosenMoves.split(",")).toList();
+            moves = Arrays.stream(chosenMoves.replaceAll(", ", ",").split(",")).toList();
         }
     }
 
