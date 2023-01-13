@@ -14,7 +14,7 @@ This project is composed by the following classes:
 ### How to run the game
 1) Clone the project using git:
 ```
-git clone https://github.com/douglasdotv/rps-game.git
+git clone https://github.com/douglasdotv/rps-1.git
 ```
 
 2) Compile and run the Main class:
