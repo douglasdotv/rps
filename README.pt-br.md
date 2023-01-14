@@ -28,7 +28,7 @@ mvn package
 ```
 5. Execute seguinte o comando para iniciar o jogo: 
 ```
-java -jar target/rock-paper-scissors-1.0-SNAPSHOT.jar
+java -jar target/rps-1.0-SNAPSHOT.jar
 ```
 
 Observação: se você encontrar algum problema ao fazer a build ou executar o projeto, verifique se você tem a versão mais recente do Java e do Maven instalados e se as variáveis de ambiente do sistema estão configuradas corretamente.
