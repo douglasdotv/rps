@@ -34,6 +34,7 @@ public class GameManager {
     }
 
     public void askMoves() {
+        System.out.println("Enter the moves you wish to use separated by a comma (\",\"): ");
         String chosenMoves = scanner.nextLine();
         if (chosenMoves.isEmpty()) {
             moves = List.of("rock", "scissors", "paper");
@@ -84,6 +85,7 @@ public class GameManager {
                     }
                 }
             }
+            System.out.println("Choose your next move: ");
         }
     }
 
@@ -91,15 +93,20 @@ public class GameManager {
         System.out.printf("Hello, %s%n", player.getName());
     }
 
-    public void printAmazingMessage() {
+    public void printEarlyGameMessages() {
         System.out.println("Okay, let's start");
+        System.out.println("Remember: you can only use the moves you've elected! " +
+                "\nList of possible moves: " + moves);
+        System.out.println("You can also type \"!rating\" to check your score " +
+                "or \"!exit\" to end the game.");
+        System.out.println("Now, please choose a move: ");
     }
 
     public void run() {
         askPlayerName();
         establishPlayerRating();
         askMoves();
-        printAmazingMessage();
+        printEarlyGameMessages();
         playGame();
     }
 
