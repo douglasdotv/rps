@@ -31,4 +31,4 @@ mvn package
 java -jar target/rock-paper-scissors-1.0-SNAPSHOT.jar
 ```
 
-Observação: se você encontrar algum problema ao fazer a build ou executar o projeto, verifique se você tem a versão mais recente do Java e do Maven instalada e se as variáveis de ambiente do sistema estão configuradas corretamente.
+Observação: se você encontrar algum problema ao fazer a build ou executar o projeto, verifique se você tem a versão mais recente do Java e do Maven instalados e se as variáveis de ambiente do sistema estão configuradas corretamente.
