@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
+import java.util.Objects;
 
 public class FileHandler {
 
@@ -19,8 +20,7 @@ public class FileHandler {
     public HashMap<String, Integer> readFile() {
         try {
             InputStream inputStream = Main.class.getClassLoader().getResourceAsStream(fileName);
-            assert inputStream != null;
-            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(Objects.requireNonNull(inputStream)));
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] lineWords = line.split("\\s+");
